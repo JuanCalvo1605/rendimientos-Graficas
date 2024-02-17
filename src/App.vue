@@ -1,5 +1,5 @@
 <script>
-import axios from 'axios';  
+import axios from 'axios';
 import Header  from './components/header.vue';
 
 export default {
@@ -43,7 +43,7 @@ export default {
         // Cargar Google Charts y dibujar el gráfico
         google.charts.load('current', { packages: ['corechart'] });
         google.charts.setOnLoadCallback(() => {
-          console.log("Google Charts cargado correctamente");
+          console.log(data_grafico_RO);
           this.drawChart(data_grafico_AL, 'valoresAL','ALSTROEMELIA');
           this.drawChart(data_grafico_RO, 'valoresRO','ROSA');
       });
